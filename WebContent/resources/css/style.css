@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  color: rgb(180, 146, 51);
+}
+
+section {
+  margin: 20px 0px;
+}
+/*navbar*/
+
+.navbarContainer {
+  top: 0;
+  z-index: 999;
+  background: rgb(234, 157, 14);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+.navLogo {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLogo a {
+  color: black;
+  scale: 1.2;
+  font-weight: 700;
+}
+.navImg img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+.navbar {
+  height: 40px;
+  color: rgb(18, 18, 18);
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(15, 15, 15, 0.5);
+  font-weight: 900;
+}
+
+/*title section*/
+.title {
+  height: 80vh;
+  width: 100%;
+  margin-top: 70px;
+  background: #ffd092;
+}
+
+.title h1 {
+  color: black;
+  margin-bottom: -10px;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+}
+/* .big-heading {
+
+} */
+.title-image-container {
+  width: 100%;
+}
+.title-image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+.btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*pricing section*/
+
+.pricing {
+  margin: 50px 0px;
+  height: auto;
+}
+
+/*features section*/
+.features {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0px;
+}
+.feature-box-container {
+  width: 100%;
+  padding: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-box {
+  height: auto;
+  text-align: center;
+  background: rgb(248, 245, 245);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.features-title {
+  color: rgb(105, 99, 99);
+  padding: 5px;
+}
+
+.features-box p {
+  font-weight: bold;
+}
+
+/* perfume|bakhoor|bodycare section */
+.perfume {
+  width: 100%;
+  height: 120vh;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 13, 1, 1) 0%,
+    rgba(57, 5, 1, 1) 84%,
+    rgba(124, 84, 5, 1) 100%
+  );
+}
+
+.perfume h3 {
+  font-weight: bold;
+  color: #f2efef;
+  text-align: center;
+  padding: 10px;
+}
+
+.perfumeContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.perfumeImg {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(3, 600px);
+  gap: 120px;
+  padding: 5px;
+}
+
+figcaption {
+  color: #fff;
+  scale: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+figcaption > span {
+  color: orange;
+}
+.perfumeImg img {
+  width: 600px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.perfumeImg img:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+#cart-icon {
+  scale: 0.8;
+  padding: 5px;
+  background: orange;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#cart-icon:hover {
+  /* background: rgb(221, 144, 0); */
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+/* Testimonial Section */
+.testimonial {
+  width: 100%;
+  background: #f2efef;
+  padding: 20px;
+  height: 30vh;
+}
+.testimonialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonialContainer img {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 13, 1, 1) 0%,
+    rgba(57, 5, 1, 1) 84%,
+    rgba(124, 84, 5, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f2efef;
+  bottom: 0;
+}
+
+/* media query for large devices */
+@media screen and (max-width: 1900px) {
+  .navImg img {
+    width: 50px;
+    height: 50px;
+  }
+  .navLogo a {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .white-section {
+    margin: 30px 0px;
+    padding: 20px;
+  }
+
+  .perfume {
+    height: 160vh;
+    padding: 20px;
+  }
+  .perfumeImg {
+    grid-template-columns: repeat(3, 300px);
+    gap: 50px;
+  }
+
+  .perfumeImg img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  figcaption {
+    scale: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: start;
+  }
+  .features {
+    height: 30vh;
+  }
+
+  .testimonial {
+    padding: 10px;
+    height: 55vh;
+  }
+  .testimonialContainer img {
+    width: 600px;
+    height: 300px;
+    padding: 5px;
+    margin-top: 30px;
+    border: 3px solid orange;
+    border-radius: 5px;
+  }
+}
+
+/* media query for medium devices */
+@media screen and (max-width: 1100px) {
+  .navImg img {
+    width: 45px;
+    height: 45px;
+  }
+  .navLogo a {
+    margin: 20px;
+  }
+
+  .white-section {
+    margin: 30px 0px;
+    padding: 20px;
+  }
+
+  .perfume {
+    height: 155vh;
+    padding: 20px;
+  }
+  .perfumeImg {
+    grid-template-columns: repeat(3, 200px);
+    gap: 50px;
+  }
+
+  .perfumeImg img {
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  figcaption {
+    scale: 0.8;
+    margin-left: -40px;
+    margin-right: -40px;
+    text-align: start;
+    width: 300px;
+    height: 70px;
+  }
+  .features {
+    height: 50vh;
+  }
+  .feature-box {
+    scale: 0.8;
+  }
+  .testimonial {
+    height: 65vh;
+  }
+}
+h1 {
+  text-align: center;
+  color: black;
+}
+
+
+table {   
+	border-collapse:collapse;
+	border-bottom:1px solid black;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	width:72%;
+}
+ 
+th {
+	border-bottom:1px solid black;
+	background:none repeat scroll 0 0 rgb(180, 146, 51);
+	padding:10px;
+	color: #FFFFFF;
+}
+
+tr {
+	border-top:1px solid black;
+	text-align:center;	
+}
+ 
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: #BBBBBB}	
+ 
+#wrapper {width: 100%; margin-top: 30px; }
+#header {width: 70%; background: rgb(180, 146, 51); margin-top: 50px; padding:15px 0px 15px 15px;}
+#header h2 {width: 100%; margin:auto; color: #FFFFFF;}
+#container {width: 100%; margin:auto}
+#container h3 {color: #000;}
+#container #content {margin-top: 20px;}
+
+.add-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	padding: 5px 10px; 
+
+	margin-bottom: 15px;
+	background: rgb(180, 146, 51);
+}

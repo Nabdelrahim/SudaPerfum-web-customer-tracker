@@ -1,0 +1,61 @@
+form {
+	margin-top: 10px;
+}
+
+label {
+	font-size: 16px; 
+	width: 100px; 
+	display: block; 
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+input {
+	width: 250px;
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 16px;
+}
+
+.save {
+	font-weight: bold;
+	width: 130px; 
+	padding: 5px 10px; 
+	margin-top: 30px;
+	background: rgb(180, 146, 51);
+}
+
+table {   
+	border-style:none;
+	width:50%;
+}
+
+tr:nth-child(even) {background: #f0eaea}
+tr:nth-child(odd) {background: #f0eaea}
+
+tr {
+	border-style:none;
+	text-align:left;	
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 13, 1, 1) 0%,
+    rgba(57, 5, 1, 1) 84%,
+    rgba(124, 84, 5, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f2efef;
+  bottom: 0;
+  margin-top: 200px;
+}
+	
